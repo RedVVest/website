@@ -223,6 +223,10 @@ body{
         font-size: 16px;
     }
     
+    .border{
+    all: unset;
+    }
+    
      .border::after{
         content: none;
     }
