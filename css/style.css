@@ -66,6 +66,24 @@
 }
 
 
+.border{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(236.79deg, #63CFB3 0.09%, #7B50E2 96.67%);
+}
+
+.border::after{
+    content: '';
+    position: absolute;
+    background-image: url("./../img/Vectary texture.svg");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    right: -337px;
+    pointer-events: none;
+
+}
 
 .page{
     z-index: 9999;
