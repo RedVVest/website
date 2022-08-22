@@ -65,6 +65,10 @@
     background-color: var(--bg-color);
 }
 
+body{
+     background: var(--additional-color);
+}
+
 .border{
     width: 100vw;
     height: 100vh;
@@ -395,9 +399,6 @@
         width: 100%;
         min-height: 100vh;
         overflow-y: scroll;
-    }
-     .border{
-        background-color: var(--additional-color);
     }
 }
 
