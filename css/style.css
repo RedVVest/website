@@ -393,6 +393,12 @@
     }
 }
 
+@media (max-height: 800px){
+    .page{
+        overflow-y: scroll;
+    }
+}
+
 
 
 
