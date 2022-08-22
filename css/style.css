@@ -65,6 +65,11 @@
     background-color: var(--bg-color);
 }
 
+body{
+    overflow-x: hidden;
+}
+
+
 
 .border{
     width: 100vw;
