@@ -1,0 +1,402 @@
+@import "./reset.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+
+@import url('http://fonts.cdnfonts.com/css/aileron');
+
+:root{
+    --ff-ae: 'Aileron', sans-serif;
+    --ff-gr: 'Space Grotesk', sans-serif;
+    --fw-s: 400;
+    --fw-m: 700;
+    --fs-xs: 1.2625rem;
+    --fs-s: 1.89375rem;
+    --fs-m: 2.524375rem;
+    --fs-l: 5.049375rem;
+    --main-color: #fff;
+    --secondary-color: #878787;
+    --additional-color: #141414;
+    --bg-color: #141414;
+}
+
+.ff_ae{
+    font-family: var(--ff-ae);
+}
+.ff_gr{
+    font-family: var(--ff-gr);
+}
+
+.fw_s{
+    font-weight: var(--fw-s);
+}
+
+.fw_m{
+    font-weight: var(--fw-m);
+}
+
+.fs_xs{
+    font-size: var(--fs-xs);
+}
+
+.fs_s{
+    font-size: var(--fs-s);
+}
+
+.fs_m{
+    font-size: var(--fs-m);
+}
+
+.fs_l{
+    font-size: var(--fs-l);
+}
+
+.main_color{
+    color: var(--main-color);
+}
+
+.secondary_color{
+    color: var(--secondary-color);
+}
+.additional_color{
+    color: var(--additional-color);
+}
+
+.bg_color{
+    background-color: var(--bg-color);
+}
+
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+
+.border{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(236.79deg, #63CFB3 0.09%, #7B50E2 96.67%);
+}
+
+.border::after{
+    content: '';
+    position: absolute;
+    background-image: url("./../img/Vectary texture.svg");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    right: -337px;
+}
+
+.page{
+    z-index: 9999;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    height: 92vh;
+}
+
+.page::after {
+    content: '';
+    position: absolute;
+    background-image: url("./../img/main.svg");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    top: 10px;
+    right: -500px;
+}
+
+
+
+.nav{
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1428.55px;
+    min-height: 104.77px;
+}
+
+.logo{
+    transition: color .2s;
+}
+
+.logo:hover{
+    background: linear-gradient(236.79deg, #63CFB3 0.09%, #7B50E2 96.67%);
+    color: transparent;
+    -webkit-background-clip: text;
+    cursor: pointer;
+}
+
+.navigation{
+    display: flex;
+    column-gap: 3.155625rem;
+}
+
+.navigation a:hover{
+    color: var(--main-color);
+}
+
+.active{
+    color: var(--main-color) !important;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    column-gap: 3.47125rem;
+}
+
+.login a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.btn{
+    color: var(--additional-color) !important;
+    padding: 0.946875rem;
+    background-color: var(--main-color);
+    border-radius: 6.31157px;
+
+}
+
+.text__block{
+    margin: 0 auto;
+    max-width: 1428.55px;
+    padding: 3.311875em 1.25rem 5.83625em;
+
+}
+
+.text__block h1{
+    max-width: 858.37px;
+}
+
+.text__block p{
+    margin-top: 1.85375rem;
+    max-width: 681.65px;
+}
+
+.btn--wider{
+    margin-top: 2.47376rem;
+    padding: 0.946875rem 1.89375rem;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.info{
+    margin: 0 auto;
+    max-width: 1428.55px;
+    padding: 0 1.25rem;
+}
+
+.info p{
+    margin-bottom: 2.84rem;
+
+}
+
+.company__list{
+    display: flex;
+    justify-content: space-between;
+    max-width: 420px;
+}
+
+@media (max-width: 1370px ) {
+    html{
+        font-size: 16px;
+    }
+
+    .page{
+        width: 100%;
+        height: 100%;
+    }
+
+    .page::after{
+        background-size: 65%;
+        top: 145px;
+        right: -450px;
+    }
+
+    .text__block{
+       font-size: 30px;
+    }
+
+    .text__block h1{
+        max-width: 800px;
+    }
+
+    .text__block p{
+        max-width: 700px;
+    }
+    
+}
+
+@media (max-width: 1120px ) {
+    html {
+        font-size: 12px;
+    }
+
+    .page::after{
+        background-size: 60%;
+        top: 135px;
+        right: -360px;
+    }
+
+    .text__block{
+        font-size: 25px;
+    }
+
+    .text__block h1{
+        max-width: 700px;
+    }
+
+    .text__block p{
+        max-width: 600px;
+    }
+
+}
+
+@media (max-width: 850px ) {
+    html {
+        font-size: 10px;
+    }
+
+    .page::after {
+        background-size: 60%;
+        top: 145px;
+        right: -310px;
+    }
+
+    .text__block {
+        font-size: 25px;
+    }
+
+    .text__block h1 {
+        max-width: 600px;
+    }
+
+    .text__block p {
+        max-width: 500px;
+    }
+
+}
+
+    @media (max-width: 750px ){
+        html{
+            font-size: 9px;
+        }
+
+        .page{
+            overflow-y: scroll;
+        }
+
+        .page::after {
+            background-size: 45%;
+            top: 125px;
+            right: -350px;
+        }
+
+        .text__block{
+            font-size: 15px;
+        }
+
+        .text__block h1{
+            max-width: 500px;
+        }
+
+        .text__block p{
+            max-width: 400px;
+        }
+    }
+
+    @media (max-width: 600px ){
+        html{
+            font-size: 8px;
+        }
+
+        .page::after {
+            background-size: 45%;
+            top: 145px;
+            right: -300px;
+        }
+
+        .text__block h1{
+            max-width: 450px;
+        }
+
+        .text__block p{
+            max-width: 350px;
+        }
+
+
+    }
+
+
+    @media (max-width: 450px ) {
+    html {
+        font-size: 8px;
+    }
+
+    .navigation{
+        display: none;
+    }
+
+    .page::after{
+        background-size: 55%;
+
+        height: 200px;
+        top: 375px;
+        right: -30px;
+    }
+
+    .text__block{
+        font-size: 10px;
+        text-align: center;
+        padding-bottom: 23em;
+    }
+
+    .info p{
+        margin-top: -1rem;
+        margin-bottom: 2.84rem;
+
+    }
+    .company__list{
+        justify-content: flex-start;
+    }
+
+    .company__list img{
+        max-width: 35%;
+
+}
+
+    .company__list--img + .company__list--img{
+       margin-left: 2rem;
+    }
+
+}
+
+@media (max-height: 800px){
+    .page{
+        overflow-y: scroll;
+    }
+}
+
+
+
+
+
+
+
