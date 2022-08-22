@@ -218,6 +218,10 @@ body{
     html{
         font-size: 16px;
     }
+    
+     .border::after{
+        content: none;
+    }
 
     .page{
         width: 100%;
