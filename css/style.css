@@ -397,7 +397,7 @@
         overflow-y: scroll;
     }
      .border{
-        background: none;
+        background-color: var(--additional-color);
     }
 }
 
