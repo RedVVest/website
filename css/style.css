@@ -233,7 +233,7 @@ body{
 
     .page{
         width: 100%;
-        min-height: 100vh;
+        height: 100%;
     }
 
     .page::after{
@@ -403,7 +403,7 @@ body{
 @media (max-height: 850px){
     .page{
         width: 100%;
-        min-height: 100vh;
+        height: 100%;
         overflow-y: scroll;
     }
 }
