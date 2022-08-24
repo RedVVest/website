@@ -405,6 +405,17 @@ body{
 }
 
 @media (max-height: 850px){
+   
+    .border{
+    all: unset;
+    }
+    
+     .border::after{
+        content: none;
+    }
+
+    
+    
     .page{
         width: 100%;
         height: 100%;
