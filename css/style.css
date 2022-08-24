@@ -76,6 +76,7 @@ body{
     width: 100vw;
     height: 100vh;
     background: linear-gradient(236.79deg, #63CFB3 0.09%, #7B50E2 96.67%);
+    position: relative;
 }
 
 .border::after{
